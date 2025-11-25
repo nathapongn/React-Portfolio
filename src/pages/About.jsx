@@ -19,7 +19,7 @@ export default function About() {
 
                         <MediaBlock 
                         title="What I value"
-                        description={`Given my architecture background, I highly value organization and consistency. I believe a well-structured design system that is intuitive for designers and translatable to development is essential for improving communication across teams, increasing efficiency, and minimizing discrepancies.
+                        description={`Given my architecture background, I highly value organization and consistency. I believe a well-structured design system that is intuitive for designers and translatable to development is crucial for clarifying communication across teams, increasing efficiency, and minimizing discrepancies.
                         
                         To me, a strong design system follows a three-layer pyramid: Understanding, Flexibility, and Efficiency. With a solid understanding, components become clear and reusable; flexibility keeps them adaptable; and efficiency naturally follows.`
                         }

@@ -1,11 +1,15 @@
+// CSS
 import './Card.css'
+
+// React
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext.jsx";
 
-// MUI Icons
-import Icon from '@mui/material/Icon';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+// Components
+import Icon from '../Icon/Icon.jsx'
+
+// Lucide
+import { Eclipse, ArrowRight } from 'lucide-react';
 
 export default function Card({ children = "Title", description = "Description", modeSupport = false, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, thumbnailClass, alt }) {
     const { darkMode } = useContext(ThemeContext);
@@ -27,7 +31,7 @@ export default function Card({ children = "Title", description = "Description", 
                             <h2 className="text-xl text-neutral-primary">{children}</h2>
                             {modeSupport && (
                                 <Icon>
-                                    <Brightness4Icon className="icon-subtle" />
+                                    <Eclipse className="icon-subtle" size={24} />
                                 </Icon>
                             )}
                         </div>
@@ -36,7 +40,7 @@ export default function Card({ children = "Title", description = "Description", 
                     <div className="card-footer-link">
                         <p className="read-more text-s strong accent">Read More</p>
                             <Icon className="read-more-icon">
-                                <ArrowForwardIcon className="icon-accent"/>
+                                <ArrowRight className="icon-accent" size={24}/>
                             </Icon>
                     </div>
                 </div> 

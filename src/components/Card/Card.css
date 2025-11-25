@@ -6,8 +6,8 @@
     border: 1px solid var(--surface-outline-1);
     border-radius: var(--radius-m);
     width: 100%;
-    min-height: 600px; /* optional */
-    height: auto; /* allow dynamic height */
+    min-height: 600px;
+    height: auto;
     transition: min-height var(--transition-2), opacity var(--transition-2);
 }
 .card:hover{

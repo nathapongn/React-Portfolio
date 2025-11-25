@@ -1,0 +1,8 @@
+.no-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-m);
+    height: 90vh;
+}

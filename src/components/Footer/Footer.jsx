@@ -4,10 +4,10 @@ import './Footer.css';
 // Components
 import Wrapper from '../Wrapper/Wrapper.jsx'
 import Divider from '../Divider/Divider.jsx'
+import Icon from '../Icon/Icon.jsx'
 
-// MUI
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+// Lucide
+import { BriefcaseBusiness, Computer, Copyright } from 'lucide-react';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -29,14 +29,14 @@ export default function Footer() {
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            <LinkedInIcon sx={{ fontSize: 36 }} className="icon-enabled" />
+                            <BriefcaseBusiness className="icon-enabled" />
                         </a>
                         <a 
                             href="https://github.com/nathapongn" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            <GitHubIcon sx={{ fontSize: 32 }} className="icon-enabled" />
+                            <Computer className="icon-enabled" />
                         </a>
                         </div>
                     </div>
@@ -49,7 +49,10 @@ export default function Footer() {
             <Divider />
             <Wrapper>
                 <div className='copyright-content'>
-                    <p className="text-xs text-neutral-placeholder">© {currentYear} Nathapong Nurae. All rights reserved.</p>
+                    <Icon>
+                        <Copyright className="icon-enabled" size={16}/>
+                    </Icon>
+                    <p className="text-xs text-neutral-placeholder">{currentYear} Nathapong Nurae. All rights reserved.</p>
                 </div>
             </Wrapper>
         </div>

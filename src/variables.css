@@ -100,7 +100,7 @@
     --surface-translucent: rgba(255, 255, 255, 0.8);
 
     --text-neutral-primary: var(--darkneutral-0);
-    --text-neutral-secondary: var(--darkneutral-300);
+    --text-neutral-secondary: var(--darkneutral-400);
     --text-neutral-placeholder: var(--darkneutral-500);
     --text-static-primary: var(--darkneutral-1100);
     --text-static-secondary: var(--darkneutral-1000);
@@ -170,6 +170,8 @@
 
 .link-plain { text-decoration: none; color: var(--text-neutral-primary); }
 .link-plain:hover { opacity: 80%; }
+.link-underline { font-weight: 500; text-decoration: none; color: var(--accent) }
+.link-underline:hover { font-weight: 600; color: var(--accent-hover) }
 
 /* Text Colors */
 .text-neutral-primary   { color: var(--text-neutral-primary); }

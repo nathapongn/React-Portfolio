@@ -1,14 +1,20 @@
+// CSS
 import './App.css'
 
-import { useContext, useEffect } from 'react'
+// React
+import { useContext, useEffect, lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeContext, ThemeContextProvider } from './context/ThemeContext.jsx'
 
+// Components
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
-import Portfolio from './pages/Portfolio/Portfolio.jsx'
-import About from './pages/About.jsx'
-import NoPage from './pages/NoPage.jsx'
+
+// Pages
+import Loading from './pages/Loading/Loading.jsx'
+const Portfolio = lazy(() => import('./pages/Portfolio/Portfolio.jsx'));
+const About = lazy(() => import('./pages/About.jsx'));
+const NoPage = lazy(() => import('./pages/NoPage/NoPage.jsx'));
 
 function ThemeBody({children}) {
   const { darkMode } = useContext(ThemeContext);
@@ -27,11 +33,13 @@ function App() {
           <ThemeContextProvider>
             <ThemeBody>
               <Header />
-              <Routes>
+              <Suspense fallback={<Loading/>}>
+                <Routes>
                 <Route path="/" element={<Portfolio />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<NoPage />} />
               </Routes>
+              </Suspense>
               <Footer />
             </ThemeBody>
           </ThemeContextProvider>

@@ -16,7 +16,7 @@ export default function Cover({className, lightSrc, darkSrc, alt}) {
 
     return (
         <div className="cover">
-            <img  className={`cover-image ${className}`} src={darkMode ? (darkSrc || lightSrc) : lightSrc} alt={alt}/>
+            <img className={`cover-image ${className}`} src={darkMode ? (darkSrc || lightSrc) : lightSrc} alt={alt}/>
             <Divider />
             <div className="mode-support-banner">
                 <LampDesk />

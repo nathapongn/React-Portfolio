@@ -1,15 +1,18 @@
 .cover{
     display: flex;
     flex-direction: column;
-    height: 50vh;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-.cover-image{
+.cover-media-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cover-media, .cover-media-mobile{
     width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .mode-support-banner{

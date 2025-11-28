@@ -16,13 +16,13 @@ export default function Cover({className, lightSrc, darkSrc, lightSrcMobile, dar
     const { darkMode } = useContext(ThemeContext);
 
     const mediaSrc = (darkMode ? (darkSrc || lightSrc) : lightSrc);
-    const mediaSrcMobile = (darkMode ? (darkSrcMobile || lightSrcMobile) : lightSrc);
+    const mediaSrcMobile = (darkMode ? (darkSrcMobile || lightSrcMobile) : lightSrcMobile);
 
     return (
         <section className={`cover ${className}`}>
-            <picture className="cover-media" alt={alt}>
-                <source className="" srcset={mediaSrc} />
-                <img className="" src={mediaSrcMobile} />
+            <picture className="cover-media-wrapper">
+                <source className="cover-media-mobile" srcSet={(mediaSrcMobile || mediaSrc)} media="(max-width: 768px)" />
+                <img className="cover-media" src={mediaSrc} alt={alt}/>
             </picture>
             <Divider />
             <div className="mode-support-banner">

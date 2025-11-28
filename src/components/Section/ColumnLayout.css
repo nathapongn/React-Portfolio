@@ -1,0 +1,13 @@
+.column-layout{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-xxl);
+    padding: var(--spacing-xl) 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .column-layout {
+        grid-template-columns: 1fr;
+    }
+}

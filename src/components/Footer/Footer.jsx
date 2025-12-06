@@ -7,7 +7,7 @@ import Divider from '../Divider/Divider.jsx'
 import Icon from '../Icon/Icon.jsx'
 
 // Lucide
-import { BriefcaseBusiness, Computer, Copyright } from 'lucide-react';
+import { Linkedin, Github, Copyright } from 'lucide-react';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -24,20 +24,24 @@ export default function Footer() {
                             <p className="text-s text-neutral-secondary">Let's work together!</p>
                         </div>
                         <div className="footer-social-profile">
-                        <a 
+                        <Icon>
+                            <a 
                             href="https://www.linkedin.com/in/nathapongn/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            <BriefcaseBusiness className="icon-enabled" />
+                            <Linkedin className="icon-enabled" />
                         </a>
+                        </Icon>
+                        <Icon>
                         <a 
                             href="https://github.com/nathapongn" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            <Computer className="icon-enabled" />
+                            <Github className="icon-enabled" />
                         </a>
+                        </Icon>
                         </div>
                     </div>
                     <Divider />

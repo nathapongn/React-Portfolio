@@ -3,7 +3,7 @@ import Icon from '../Icon/Icon.jsx'
 
 export default function Copy(
     {title="Title", 
-    description="Description", 
+    description, 
     titleSize="text-xl", 
     descriptionSize="text-m", 
     background=false, 

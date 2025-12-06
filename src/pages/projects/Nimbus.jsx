@@ -84,11 +84,21 @@ export default function Nimbus() {
                         cols={4}
                     ></Copy>
                  </ColumnLayout>
-                 <MediaBlock 
+                 <MediaBlock
                     title="Objective"
                     description="Design a localized personal finance tracking platform for Thailand that offers comprehensive features with added automation to enhance convenience."
                     lightSrc={assets.obj.light}
                     darkSrc={assets.obj.dark}
+                 />
+                 <MediaBlock showLabel={false} lightSrc={assets.wireframe.light} darkSrc={assets.wireframe.dark} />
+                 <MediaBlock showLabel={false} lightSrc={assets.sitemap.light} darkSrc={assets.sitemap.dark} />
+                 <Copy title="Design Solution"/>
+                 <MediaBlock
+                    caption="Overview"
+                    title="Dashboard"
+                    description="Provides an overview of your assets, statistics, recent transactions, active budgets, and account balances."
+                    lightSrc={assets.dashboard.light}
+                    darkSrc={assets.dashboard.dark}
                  />
             </main>
         </>

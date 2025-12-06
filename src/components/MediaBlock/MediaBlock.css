@@ -19,7 +19,6 @@
 }
 .media-block img {
     width: 100%;
-    max-width: 800px;
 }
 .media-block.mirror{
     flex-direction: row-reverse;

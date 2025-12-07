@@ -16,6 +16,13 @@
 }
 .full-width{
     width: 100%;
+    align-items: center;
+    max-width: 75ch;
+    text-align: center;
+}
+
+.section-header{
+    padding: var(--spacing-xxxl) 0 var(--spacing-xxxl) 0;
 }
 
 .col-span-1 { grid-column: span 1 / span 1; }

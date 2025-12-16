@@ -1,8 +1,8 @@
 // CSS
 import "./MediaBlock.css"
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext.jsx";
-import Wrapper from "../../components/Wrapper/Wrapper.jsx"
+import { ThemeContext } from "../../../context/ThemeContext.jsx";
+import Wrapper from "../Wrapper/Wrapper.jsx";
 
 export default function MediaBlock({
   showLabel = true,

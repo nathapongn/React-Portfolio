@@ -1,4 +1,4 @@
-import Wrapper from '../../components/Wrapper/Wrapper.jsx'
+import Wrapper from '../../components/primitives/Wrapper/Wrapper.jsx'
 
 export default function Nimbus() {
     return (

@@ -1,9 +1,9 @@
-import MediaBlock from '../../components/MediaBlock/MediaBlock.jsx'
-import ColumnLayout from '../../components/Section/ColumnLayout.jsx';
-import Copy from '../../components/Section/Copy.jsx';
-import Divider from '../../components/Divider/Divider.jsx';
-import Cover from '../../components/Cover/Cover.jsx'
-import Wrapper from '../../components/Wrapper/Wrapper.jsx'
+import MediaBlock from '../../components/primitives/MediaBlock/MediaBlock.jsx'
+import ColumnLayout from '../../components/primitives/Section/ColumnLayout.jsx';
+import Copy from '../../components/primitives/Section/Copy.jsx';
+import Divider from '../../components/primitives/Divider/Divider.jsx';
+import Cover from '../../components/primitives/Cover/Cover.jsx'
+import Wrapper from '../../components/primitives/Wrapper/Wrapper.jsx'
 
 // Assets
 import assets from '../../assets/projects/lmwn/index.js';

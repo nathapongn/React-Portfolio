@@ -10,13 +10,13 @@ import ButtonIcon from '../ButtonIcon/ButtonIcon.jsx'
 // React
 import { useNavigate, Link } from 'react-router-dom'; 
 import { useState, useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext.jsx';
+import { ThemeContext } from '../../../context/ThemeContext.jsx';
 
 // Lucide
 import { Sun, Moon, Menu, X } from 'lucide-react';
 
 // Assets
-import assets from '../../assets/site/index.js'
+import assets from '../../../assets/site/index.js'
 
 export default function Header() {
     const navigate = useNavigate();

@@ -3,7 +3,7 @@ import './Card.css'
 
 // React
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext.jsx";
+import { ThemeContext } from "../../../context/ThemeContext.jsx";
 
 // Components
 import Icon from '../Icon/Icon.jsx'

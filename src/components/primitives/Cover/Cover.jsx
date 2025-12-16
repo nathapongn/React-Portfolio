@@ -3,7 +3,7 @@ import './Cover.css'
 
 // React
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext.jsx";
+import { ThemeContext } from "../../../context/ThemeContext.jsx";
 
 // Components
 import Divider from '../Divider/Divider.jsx'

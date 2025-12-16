@@ -5,9 +5,9 @@ import Loading from './Loading/Loading.jsx'
 
 // Pages
 const Portfolio = lazy(() => import('../pages/Portfolio/Portfolio.jsx'));
-const Nimbus = lazy(() => import('../pages/projects/Nimbus.jsx'));
+const Nimbus = lazy(() => import('./projects/nimbus/Nimbus.jsx'));
 const Amper = lazy(() => import('../pages/projects/Amper.jsx'));
-const Flint = lazy(() => import('../pages/projects/Flint.jsx'));
+const Flint = lazy(() => import('./projects/Flint/Flint.jsx'));
 const LMWN = lazy(() => import('../pages/projects/LMWN.jsx'));
 const NoPage = lazy(() => import('../pages/NoPage/NoPage.jsx'))
 

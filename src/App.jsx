@@ -7,8 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeContext, ThemeContextProvider } from './context/ThemeContext.jsx'
 
 // Components
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'
+import Header from './components/primitives/Header/Header.jsx'
+import Footer from './components/primitives/Footer/Footer.jsx'
 
 // Pages
 import Loading from './pages/Loading/Loading.jsx'

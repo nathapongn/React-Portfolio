@@ -91,8 +91,8 @@ export default function Solution() {
             />
             <MediaBlock
                 mirror={false}
-                lightSrc={assets.txn.light.image}
-                darkSrc={assets.txn.dark.image}
+                lightSrc={assets.budget.light.image}
+                darkSrc={assets.budget.dark.image}
                 caption={copy.budget.caption}
                 title={copy.budget.title}
                 description={copy.budget.description}

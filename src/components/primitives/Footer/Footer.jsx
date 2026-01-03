@@ -58,6 +58,7 @@ export default function Footer() {
                     </Icon>
                     <p className="text-xs text-neutral-placeholder">{currentYear} Nathapong Nurae. All rights reserved.</p>
                 </div>
+                <p className="text-xs text-neutral-placeholder">V1.0.1</p>
             </Wrapper>
         </div>
         </>

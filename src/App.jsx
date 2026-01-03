@@ -31,7 +31,7 @@ function ThemeBody({children}) {
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <ScrollToTop />
           <ThemeContextProvider>
             <ThemeBody>
